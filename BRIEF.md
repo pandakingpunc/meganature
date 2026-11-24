@@ -54,6 +54,6 @@ README.md (Türkçe)  LICENSE (MIT, Copyright (c) 2026 Mustafa Karatüm)  THIRD_
 
 ## Kurallar
 
-- Yalnız `C:\Users\Superuser\Desktop\opend3\meganature` içinde çalış. Başka klasöre yazma.
+- Yalnız bu repo klasörünün içinde çalış. Başka klasöre yazma.
 - `git commit` serbest (anlamlı adımlarda küçük commit'ler). **`git push` yapma, GitHub reposu açma, Vercel'e deploy etme.**
 - Bitince `REPORT.md` yaz: ne yapıldı, seçilen bbox, heightmap boyutu, test sonuçları (gerçek çıktı), bilinen sınırlar, sonraki adım önerisi. Uydurma sonuç yazma; çalışmayan bir şey varsa açıkça söyle.

@@ -2,6 +2,11 @@
   "name": "meganature",
   "version": "1.0.0",
   "private": true,
+  "description": "Gerçek arazi verisinden (Copernicus DEM GLO-30) üretilmiş, tarayıcıda yürünebilen 3B doğa haritaları. v1: Kuzey Faroe (Kalsoy).",
+  "author": "Mustafa Karatüm",
+  "license": "MIT",
+  "homepage": "https://pandakingpunc.github.io/meganature/",
+  "repository": { "type": "git", "url": "https://github.com/pandakingpunc/meganature.git" },
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {

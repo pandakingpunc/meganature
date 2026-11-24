@@ -2,6 +2,8 @@
 
 Kallur Feneri yakınından başlayan, tarayıcıda yürünebilen tek bir 3B doğa haritası. Arazi, Copernicus DEM GLO-30 verisinden gerçek metre ölçeğinde üretilir. Kalsoy, Kunoy ve Eysturoy’un kuzeydoğu dağları aynı haritadadır.
 
+**Canlı:** https://pandakingpunc.github.io/meganature/
+
 ## Yerel kullanım
 
 Node.js 22 veya sonrası, npm ve WebGL 2 destekli bir tarayıcı gerekir. Tarayıcı doğrulaması kurulu Microsoft Edge’i kullanır.
