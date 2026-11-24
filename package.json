@@ -1,0 +1,21 @@
+{
+  "name": "meganature",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node server.mjs",
+    "fetch:dem": "node scripts/fetch-dem.mjs",
+    "build:heightmap": "node scripts/build-heightmap.mjs",
+    "test": "node tests/validate.mjs"
+  },
+  "dependencies": { "three": "0.187.0" },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "geotiff": "3.0.5",
+    "playwright": "1.65.1",
+    "pngjs": "7.0.0"
+  }
+}

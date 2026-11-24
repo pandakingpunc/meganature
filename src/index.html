@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#172a2e">
+  <meta name="description" content="Gerçek arazi verisiyle Faroe Adaları’nın kuzeyinde, Kalsoy ve Kallur Feneri çevresinde yürüyün.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <title>MegaNature · Faroe Adaları — Kalsoy</title>
+</head>
+<body>
+  <main id="world" aria-label="Faroe Adaları üç boyutlu haritası"></main>
+  <div id="hud" hidden>
+    <div class="wordmark"><span class="brand-icon" aria-hidden="true"></span><span>Mega<span>Nature</span></span></div>
+    <div class="compass" aria-label="Bakış yönü">
+      <span class="compass-tick"></span><output id="heading"></output><span class="compass-tick"></span>
+    </div>
+    <div class="mode"><i aria-hidden="true"></i><output id="mode">Yürüyüş</output></div>
+    <span id="reticle" aria-hidden="true"></span>
+    <section class="location" aria-label="Konum">
+      <p class="location-name">MegaNature · Faroe Adaları — Kalsoy</p>
+      <h1 id="landmark">Kallur Feneri</h1>
+      <dl class="telemetry">
+        <div><dt>Rakım</dt><dd><output id="elevation"></output></dd></div>
+        <div><dt>Enlem / Boylam</dt><dd><output id="coordinates"></output></dd></div>
+      </dl>
+    </section>
+    <button id="explore" class="pill" type="button"><span class="mouse-icon" aria-hidden="true"></span>Keşfe başla</button>
+    <div class="actions">
+      <div class="shortcuts">
+        <button class="text-button keyboard-hint" id="controls" type="button"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> <span>Yürü</span></button>
+        <button class="text-button" id="flight" type="button" aria-pressed="false"><kbd>F</kbd> <span>Uçuş</span></button>
+        <button class="text-button" id="photo" type="button"><kbd>P</kbd> <span>Fotoğraf</span></button>
+      </div>
+      <button id="sources" type="button">Kaynaklar <span aria-hidden="true">↗</span></button>
+    </div>
+    <div id="touch-controls">
+      <div id="joystick" aria-label="Sanal yön çubuğu"><span></span></div>
+      <div id="touch-height" hidden>
+        <button id="rise" class="pill" type="button" aria-label="Yüksel">↑</button>
+        <button id="lower" class="pill" type="button" aria-label="Alçal">↓</button>
+      </div>
+    </div>
+    <span id="control-status" class="visually-hidden" role="status"></span>
+  </div>
+  <button id="restore-ui" class="pill" type="button" hidden>Fotoğraf modundan çık</button>
+  <p id="loading" role="status">Faroe arazisi yükleniyor…</p>
+  <dialog id="details">
+    <button class="close" type="button" aria-label="Kapat">×</button>
+    <section id="details-controls" hidden>
+      <h2>Kontroller</h2>
+      <dl>
+        <div><dt>WASD / ok tuşları</dt><dd>Yürü</dd></div>
+        <div><dt>Fare</dt><dd>Etrafa bak</dd></div>
+        <div><dt>Shift</dt><dd>Koş veya uçuşu hızlandır</dd></div>
+        <div><dt>F</dt><dd>Uçuşu aç veya kapat</dd></div>
+        <div><dt>Q / E</dt><dd>Alçal / yüksel</dd></div>
+        <div><dt>P</dt><dd>Arayüzü gizle veya göster</dd></div>
+        <div><dt>Esc</dt><dd>Fareyi serbest bırak</dd></div>
+      </dl>
+    </section>
+    <section id="details-sources" hidden>
+      <h2>Kaynaklar</h2>
+      <p id="attribution"></p>
+      <p>Harita Copernicus WorldDEM-30 verisinden üretilmiştir. Tüm hakları saklıdır. Copernicus programından kanunen veya yetki devriyle sorumlu kuruluşlar, Copernicus WorldDEM-30’un kullanımından dolayı sorumluluk taşımaz.</p>
+      <ul>
+        <li><a id="dem-license" target="_blank" rel="noopener noreferrer">Copernicus DEM lisansı</a></li>
+        <li><a id="osm" target="_blank" rel="noopener noreferrer">Kallur konumu · © OpenStreetMap katkıcıları</a></li>
+      </ul>
+    </section>
+  </dialog>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
